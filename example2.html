@@ -7,6 +7,14 @@
       label { display: block; margin-bottom: 7px;}
     </style>
   </head>
+  <script>
+      window.addEventListener("load", function() {
+          let form = document.querySelector("form");
+          form.addEventListener("submit", function(event) {
+              alert("submit selected");
+          });
+      });
+  </script>
   <body>
     <form action="https://handlers.education.launchcode.org/request-parrot" method="post">
     <label>Test Name <input type="text" name="testName"/></label>
